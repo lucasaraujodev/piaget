@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: linear-gradient(0deg, #555454 0%, #8b8b8b 50%, #c5c4c4 100%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin: 50px;
+    background: linear-gradient(0deg, #3a0303 0%, #8b0e0e 50%, #d82e2e 100%);  
+}
+
+.product-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    background: linear-gradient(0deg, #272727 0%, #272727 50%, #595959 100%);
+}
+img {
+    position: absolute;
+    height: 200%;
+    filter: drop-shadow(0 0 15px #000);
+}
+    
+.text-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+    
+h2 {
+    font-size: 2.5rem;
+    line-height: 0.8rem;
+    color: whitesmoke;
+}
+            
+h4 {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #999;
+}  
+
+p {
+    text-align: justify;
+    max-width: 100%;
+    margin-bottom: 8px;
+    color: rgb(233, 231, 231);
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: #999;
+    float: left;
+}
+
+button {
+    background: #003feb;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 5px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 1080px) {
+    
+    .container {
+        height: 600px;
+        grid-template-columns: repeat(2, 50%);
+    }
+    .product-img img {
+        height: 130%;
+        transform: rotate(-20deg); translate: (-50px, -50px);
+        filter: drop-shadow(-6px 10px 8x #000);
+    }
+    .text-details {
+        height: 100%;
+        padding: 40px;
+    }
+    p {
+        max-width: 100%;
+
+    }
+}
